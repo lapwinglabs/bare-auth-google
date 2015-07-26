@@ -1,0 +1,24 @@
+{
+  "name": "bare-auth-google",
+  "version": "0.0.1",
+  "description": "Stateless authentication with Google using Bare Auth",
+  "keywords": [
+    "authentication",
+    "auth",
+    "google",
+    "stateless",
+    "bare auth"
+  ],
+  "author": "Matthew Mueller <matt@lapwinglabs.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lapwinglabs/bare-auth-google.git"
+  },
+  "main": "lib/server.js",
+  "browser": "lib/client.js",
+  "dependencies": {
+    "google-oauth-agent": "^1.0.0",
+    "object-assign": "^3.0.0",
+    "superagent": "^1.2.0"
+  }
+}
