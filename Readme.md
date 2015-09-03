@@ -18,7 +18,7 @@ Go to: https://cloud.google.com/console/project to get started
 ##### 2. Add a valid Redirect URI
 
 - Go to: https://console.developers.google.com/project/{{APP}}/apiui/credential
-- Add a redirect URL with the following format: `{{ORIGIN}}/auth/`. Example: `http://localhost:7000/auth/` or `https://app.finbox.io/auth`
+- Add a redirect URL with the following format: `{{ORIGIN}}/auth/`. Example: `http://localhost:7000/auth/` or `https://app.finbox.io/auth/`
 
 > **Important:** Don't forget to add the trailing slash as part of the valid redirect URI. Facebook will fail silently and you won't know why.
 
