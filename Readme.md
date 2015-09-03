@@ -3,9 +3,26 @@
 
   Google authentication with [Bare Auth](https://github.com/lapwinglabs/bare-auth).
 
-## Usage
+## Installation
 
-**client.js:**
+```
+npm install bare-auth-google
+```
+
+## Setup
+
+##### 1. Create an App
+
+Go to: https://cloud.google.com/console/project to get started
+
+##### 2. Add a valid Redirect URI
+
+- Go to: https://console.developers.google.com/project/{{APP}}/apiui/credential
+- Add a redirect URL with the following format: `{{ORIGIN}}/auth/`. Example: `http://localhost:7000/auth/` or `https://app.finbox.io/auth`
+
+> **Important:** Don't forget to add the trailing slash as part of the valid redirect URI. Facebook will fail silently and you won't know why.
+
+## Setup the client-side
 
 ```js
 var Google = require('google-bare-auth');
@@ -21,7 +38,9 @@ google(function(err, profile) {
 });
 ```
 
-**server.js (using express):**
+> **Important:** `url` points to the domain of your auth server (example server-side below). The routing will be set up for you
+
+##### 4. Setup the server-side (example uses Express)
 
 ```js
 var Google = require('google-bare-auth');

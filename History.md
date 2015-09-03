@@ -1,4 +1,9 @@
 
+n.n.n / 2015-09-03
+==================
+
+  * Make redirect_url independent of application routing. Now it's always /auth/
+
 1.0.2 / 2015-08-17
 ==================
 
