@@ -1,4 +1,9 @@
 
+1.0.4 / 2015-10-05
+==================
+
+  * use document.location.href as the redirect_uri by default
+
 1.0.3 / 2015-09-03
 ==================
 

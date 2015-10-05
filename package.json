@@ -1,6 +1,6 @@
 {
   "name": "bare-auth-google",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Stateless authentication with Google using Bare Auth",
   "keywords": [
     "authentication",
